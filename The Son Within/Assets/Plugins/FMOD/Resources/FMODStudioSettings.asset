@@ -384,15 +384,15 @@ MonoBehaviour:
     HasValue: 0
   displaySortOrder: 0
   childIdentifiers:
-  - 2fea114e74ecf3c4f920e1d5cc1c4c40
-  - 46fbfdf3fc43db0458918377fd40293e
-  - 0f8eb3f400726694eb47beb1a9f94ce8
-  - b7716510a1f36934c87976f3a81dbf3d
-  - 52eb9df5db46521439908db3a29a1bbb
-  - e7a046c753c3c3d4aacc91f6597f310d
-  - 2c5177b11d81d824dbb064f9ac8527da
-  - fd7c55dab0fce234b8c25f6ffca523c1
   - c88d16e5272a4e241b0ef0ac2e53b73d
+  - fd7c55dab0fce234b8c25f6ffca523c1
+  - 2c5177b11d81d824dbb064f9ac8527da
+  - e7a046c753c3c3d4aacc91f6597f310d
+  - 52eb9df5db46521439908db3a29a1bbb
+  - b7716510a1f36934c87976f3a81dbf3d
+  - 0f8eb3f400726694eb47beb1a9f94ce8
+  - 46fbfdf3fc43db0458918377fd40293e
+  - 2fea114e74ecf3c4f920e1d5cc1c4c40
 --- !u!114 &-356408495284098568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,8 +472,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: 
-  sourceBankPath: 
+  sourceProjectPath: ../TheSonWithin_FMOD/TheSonWithin_FMOD.fspro
+  sourceBankPath: ../TheSonWithin_FMOD/Build
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -511,17 +511,17 @@ MonoBehaviour:
   HideSetupWizard: 0
   LastEventReferenceScanVersion: 0
   Platforms:
-  - {fileID: -5560502131142495510}
-  - {fileID: 6372248188711805316}
-  - {fileID: 1835955661092088373}
-  - {fileID: -5005418047804574038}
-  - {fileID: -4590761112762688025}
-  - {fileID: 7474185299185920636}
-  - {fileID: -6030869341347218983}
-  - {fileID: -6139520240284087839}
-  - {fileID: -356408495284098568}
-  - {fileID: -2391014049174808850}
   - {fileID: 4572066680152534640}
+  - {fileID: -2391014049174808850}
+  - {fileID: -356408495284098568}
+  - {fileID: -6139520240284087839}
+  - {fileID: -6030869341347218983}
+  - {fileID: 7474185299185920636}
+  - {fileID: -4590761112762688025}
+  - {fileID: -5005418047804574038}
+  - {fileID: 1835955661092088373}
+  - {fileID: 6372248188711805316}
+  - {fileID: -5560502131142495510}
   MigratedPlatforms: 0c000000150000000b0000000a00000009000000120000000800000005000000060000000200000001000000
 --- !u!114 &1835955661092088373
 MonoBehaviour:
