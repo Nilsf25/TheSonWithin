@@ -1,11 +1,11 @@
 # TheSonWithin
 Visual Novel Prototype
 Features:
--Hate/Love relationships
--Puzzle solving (3D)
--Quick Time Events (QTE)
--Exploration (2D)
--Character lore and world lore
+Hate/Love relationships
+Puzzle solving (3D)
+Quick Time Events (QTE)
+Exploration (2D)
+Character lore and world lore
 
 All assets bought from the asset store and used in this project are NOT redistributed, if you wish to use/fork/clone this repo, please send me an email to thuskygaming@gmail.com or via discord so I can redirect you towards the appropriate links.
 
