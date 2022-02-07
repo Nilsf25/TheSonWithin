@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &143804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 450550}
+  - component: {fileID: 11401372}
+  - component: {fileID: 11429218}
+  - component: {fileID: 11445678}
+  m_Layer: 0
+  m_Name: MovementNode
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &450550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143804}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11401372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32bf0293bd42e4c22b5d106bb285d23e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: 
+  autoHotspot: 2
+  nodeDirections:
+  - isEnabled: 1
+    label: North
+    id: 0
+    spinAngle: 0
+    pitchAngle: 0
+    linkedNode: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - isEnabled: 1
+    label: East
+    id: 1
+    spinAngle: 90
+    pitchAngle: 0
+    linkedNode: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - isEnabled: 1
+    label: South
+    id: 2
+    spinAngle: 180
+    pitchAngle: 0
+    linkedNode: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - isEnabled: 1
+    label: West
+    id: 3
+    spinAngle: 270
+    pitchAngle: 0
+    linkedNode: {fileID: 0}
+    color: {r: 1, g: 1, b: 1, a: 1}
+  linkedPlayerStart: {fileID: 0}
+  canCycle: 1
+  gizmoSize: 1
+--- !u!114 &11429218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db50f5eff40d94cfdac2b1ad5c44d735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - {x: 0, y: 0, z: 0}
+  nodeCommands:
+  - cutscene: {fileID: 0}
+    actionListAsset: {fileID: 0}
+    parameterID: -1
+    pausesCharacter: 1
+  commandSource: 0
+  pathType: 2
+  pathSpeed: 0
+  teleportToStart: 0
+  affectY: 0
+  nodePause: 0
+--- !u!114 &11445678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2753b531b34c04cfb8a0b1c1f680f994, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  constantID: 0
+  retainInPrefab: 0
+  autoManual: 0
