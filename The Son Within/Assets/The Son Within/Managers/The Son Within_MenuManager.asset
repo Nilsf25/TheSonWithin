@@ -4224,8 +4224,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 285.59998
-    height: 86.399994
+    width: 652.80005
+    height: 119.759995
   relativePosition: {x: 0, y: 0}
   numSlots: 1
   uiText: {fileID: 0}
@@ -4727,7 +4727,7 @@ MonoBehaviour:
   _isLocked: 0
   id: 11
   title: Hotspot
-  manualSize: {x: 33.999996, y: 11.999999}
+  manualSize: {x: 34.000004, y: 11.999999}
   positionType: 3
   manualPosition: {x: 50, y: 44.4}
   positionSmoothing: 0
@@ -4798,13 +4798,13 @@ MonoBehaviour:
   speechProximityLimit: 0
   speechProximityDistance: 10
   deleteUIWhenTurnOff: 0
-  biggestElementSize: {x: 285.59998, y: 86.399994}
+  biggestElementSize: {x: 652.80005, y: 119.759995}
   rect:
     serializedVersion: 2
-    x: 277.2
-    y: 276.47998
-    width: 285.59998
-    height: 86.399994
+    x: 633.6
+    y: 383.232
+    width: 652.80005
+    height: 119.759995
   showInFilter: 1
 --- !u!114 &3100492580259242568
 MonoBehaviour:
