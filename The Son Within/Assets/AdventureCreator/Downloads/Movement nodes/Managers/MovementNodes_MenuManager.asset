@@ -224,8 +224,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 9.6
     y: 128.59999
-    width: 177.12
-    height: 94.799995
+    width: 307.2
+    height: 49.899998
   relativePosition: {x: 0, y: 0}
   numSlots: 1
   uiButton: {fileID: 0}
@@ -1589,8 +1589,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 9.6
     y: 69.1
-    width: 177.12
-    height: 94.799995
+    width: 307.2
+    height: 49.899998
   relativePosition: {x: 0, y: 0}
   numSlots: 1
   uiButton: {fileID: 0}
@@ -1659,8 +1659,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 9.6
     y: 9.6
-    width: 177.12
-    height: 94.799995
+    width: 307.2
+    height: 49.899998
   relativePosition: {x: 0, y: 0}
   numSlots: 1
   uiButton: {fileID: 0}
@@ -4920,8 +4920,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 4.845
     y: 133.225
-    width: 177.12
-    height: 94.799995
+    width: 307.2
+    height: 49.899998
   relativePosition: {x: 0, y: 0}
   numSlots: 1
   uiButton: {fileID: 0}
@@ -5542,8 +5542,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 9.6
     y: 247.59999
-    width: 177.12
-    height: 94.799995
+    width: 307.2
+    height: 49.899998
   relativePosition: {x: 0, y: 0}
   numSlots: 1
   uiButton: {fileID: 0}
@@ -6928,8 +6928,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 9.6
     y: 188.09999
-    width: 177.12
-    height: 94.799995
+    width: 307.2
+    height: 49.899998
   relativePosition: {x: 0, y: 0}
   numSlots: 1
   uiButton: {fileID: 0}
