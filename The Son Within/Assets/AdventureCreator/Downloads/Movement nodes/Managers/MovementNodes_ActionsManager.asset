@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a0c43bf7c11a40f386c183fa9601d86, type: 3}
   m_Name: MovementNodes_ActionsManager
   m_EditorClassIdentifier: 
-  customFolderPaths: []
+  customFolderPaths:
+  - 
   allFavouriteActionData: []
   displayActionsInInspector: 1
   displayActionsInEditor: 1
@@ -103,8 +104,7 @@ MonoBehaviour:
   - fileName: ActionCameraTP
     category: 1
     title: Rotate third-person
-    description: Rotates a Game Camera Third-person to face a certain direction,
-      either fixed or relative to its target.
+    description: Manipulates the new third-person camera
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionCameraShake
@@ -162,7 +162,7 @@ MonoBehaviour:
   - fileName: ActionCharHold
     category: 2
     title: Hold object
-    description: Parents a GameObject to a Character's hand transform, as chosen
+    description: Parents a GameObject to a Character's hand Transform, as chosen
       in the Character's inspector. The local transforms of the GameObject will be
       cleared. Note that this action only works with 3D characters.
     isEnabled: 1
@@ -182,12 +182,6 @@ MonoBehaviour:
     description: Moves a character to a given Marker object. By default, the character
       will attempt to pathfind their way to the marker, but can optionally just move
       in a straight line.
-    isEnabled: 1
-    color: {r: 1, g: 1, b: 1, a: 1}
-  - fileName: ActionMovementNode
-    category: 2
-    title: Movement node
-    description: Controls a Movement Node
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionCharFollow
@@ -238,8 +232,8 @@ MonoBehaviour:
     category: 4
     title: Play speech
     description: "Makes a Character talk, or \u2013 if no Character is specified
-      \u2013 displays a message. Subtitles only appear if they are enabled from the
-      Options menu. A 'thinking' effect can be produced by opting to not play any
+      \u2013 displays a message.Subtitles only appear if they are enabled from the
+      Options menu.A 'thinking' effect can be produced by opting to not play any
       animation."
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
@@ -398,6 +392,13 @@ MonoBehaviour:
       more options will show.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
+  - fileName: ActionInventoryInteraction
+    category: 9
+    title: Change interaction
+    description: Enables or disables an Inventory interaction.  This will only affect
+      items that are already present in the Player's inventory
+    isEnabled: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionInventoryCheck
     category: 9
     title: Check
@@ -490,6 +491,12 @@ MonoBehaviour:
     description: Moves a Draggable object along its track automatically to a specific
       point. The effect will be disabled once the object reaches the intended point,
       or the Action is run again with the speed value set as a negative number.
+    isEnabled: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - fileName: ActionTrackRegion
+    category: 11
+    title: Toggle track region
+    description: Enables or disables a Track region
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionInstantiate
@@ -613,8 +620,26 @@ MonoBehaviour:
       children.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
-  - fileName: ActionPlayerCheck
+  - fileName: ActionObjectiveCheck
     category: 13
+    title: Check state
+    description: Queries the current state of an objective.
+    isEnabled: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - fileName: ActionObjectiveCheckType
+    category: 13
+    title: Check state type
+    description: Queries the current state type of an objective.
+    isEnabled: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - fileName: ActionObjectiveSet
+    category: 13
+    title: Set state
+    description: Updates an objective's current state.
+    isEnabled: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - fileName: ActionPlayerCheck
+    category: 14
     title: Check
     description: Queries which Player prefab is currently being controlled. This
       only applies to games for which 'Player switching' has been allowed in the
@@ -622,15 +647,22 @@ MonoBehaviour:
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionPlayerLock
-    category: 13
+    category: 14
     title: Constrain
     description: Locks and unlocks various aspects of Player control. When using
       Direct or First Person control, can also be used to specify a Path object to
       restrict movement to.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
+  - fileName: ActionPlayerLockPath
+    category: 14
+    title: Lock to Path
+    description: When using Direct or First Person control, constrains the Player's
+      movement to a pre-defined Path.
+    isEnabled: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionPlayerSwitch
-    category: 13
+    category: 14
     title: Switch
     description: "Swaps out the Player prefab mid-game. If the new prefab has been
       used before, you can restore that prefab's position data \u2013 otherwise you
@@ -638,45 +670,52 @@ MonoBehaviour:
       games for which 'Player switching' has been allowed in the Settings Manager."
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
-  - fileName: ActionSaveCheck
+  - fileName: ActionPlayerTeleportInactive
     category: 14
+    title: Teleport inactive
+    description: Moves the recorded position of an inactive Player to the current
+      scene.
+    isEnabled: 1
+    color: {r: 1, g: 1, b: 1, a: 1}
+  - fileName: ActionSaveCheck
+    category: 15
     title: Check
     description: Queries the number of save files or profiles created, or if saving
       is possible.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionManageProfiles
-    category: 14
+    category: 15
     title: Manage profiles
     description: Creates, renames and deletes save game profiles.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionManageSaves
-    category: 14
+    category: 15
     title: Manage saves
     description: Renames and deletes save game files.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionSaveHandle
-    category: 14
+    category: 15
     title: Save or load
     description: Saves and loads save-game files
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionOptionSet
-    category: 14
+    category: 15
     title: Set Option
     description: Set an Options variable to a specific value
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionSceneAdd
-    category: 15
+    category: 16
     title: Add or remove
     description: Adds or removes a scene without affecting any other open scenes.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionNavMesh
-    category: 15
+    category: 16
     title: Change setting
     description: 'Changes any of the following scene parameters: NavMesh, Default
       PlayerStart, Sorting Map, Tint Map, Cutscene On Load, and Cutscene On Start.
@@ -685,19 +724,19 @@ MonoBehaviour:
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionSceneCheck
-    category: 15
+    category: 16
     title: Check
     description: Queries either the current scene, or the last one visited.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionSceneCheckAttribute
-    category: 15
+    category: 16
     title: Check attribute
     description: Queries the value of a scene attribute declared in the Scene Manager.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionScene
-    category: 15
+    category: 16
     title: Switch
     description: 'Moves the Player to a new scene. The scene must be listed in Unity''s
       Build Settings. By default, the screen will cut to black during the transition,
@@ -707,61 +746,60 @@ MonoBehaviour:
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionSceneSwitchPrevious
-    category: 15
+    category: 16
     title: Switch previous
-    description: 'Moves the Player to the previously-loaded scene. The scene must
-      be listed in Unity''s Build Settings. By default, the screen will cut to black
-      during the transition, but the last frame of the current scene can instead
-      be overlayed. This allows for cinematic effects: if the next scene fades in,
-      it will cause a crossfade effect; if the next scene doesn''t fade, it will
-      cause a straight cut.'
+    description: 'Moves the Player to the previously-loaded scene. By default, the
+      screen will cut to black during the transition, but the last frame of the current
+      scene can instead be overlayed. This allows for cinematic effects: if the next
+      scene fades in, it will cause a crossfade effect; if the next scene doesn''t
+      fade, it will cause a straight cut.'
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionFootstepSounds
-    category: 16
+    category: 17
     title: Change footsteps
     description: Changes the sounds used by a FootstepSounds component.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionVolume
-    category: 16
+    category: 17
     title: Change volume
     description: Alters the 'relative volume' of any Sound object.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionSound
-    category: 16
+    category: 17
     title: Play
     description: Triggers a Sound object to start playing. Can be used to fade sounds
       in or out.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionAmbience
-    category: 16
+    category: 17
     title: Play ambience
     description: Plays or queues ambience clips.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionMusic
-    category: 16
+    category: 17
     title: Play music
     description: Plays or queues music clips.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionSoundShot
-    category: 16
+    category: 17
     title: Play one-shot
     description: Plays an AudioClip once without the need for a Sound object.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionMixerSnapshot
-    category: 16
+    category: 17
     title: Set Mixer snapshot
     description: Transitions to a single or multiple Audio Mixer snapshots.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionCinemaDirector
-    category: 17
+    category: 18
     title: Cinema Director
     description: Runs a Cutscene built with Cinema Director. Note that Cinema Director
       is a separate Unity Asset, and the 'CinemaDirectorIsPresent' preprocessor must
@@ -769,7 +807,7 @@ MonoBehaviour:
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionPlayMaker
-    category: 17
+    category: 18
     title: PlayMaker
     description: Calls a specified Event within a PlayMaker FSM. Note that PlayMaker
       is a separate Unity Asset, and the 'PlayMakerIsPresent' preprocessor must be
@@ -777,14 +815,14 @@ MonoBehaviour:
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionVarPreset
-    category: 18
+    category: 19
     title: Assign preset
     description: Bulk-assigns the values of all Global or Local values to a predefined
       preset within the Variables Manager.
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionVarCheck
-    category: 18
+    category: 19
     title: Check
     description: Queries the value of both Global and Local Variables declared in
       the Variables Manager. Variables can be compared with a fixed value, or with
@@ -792,14 +830,14 @@ MonoBehaviour:
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionRandomCheck
-    category: 18
+    category: 19
     title: Check random number
     description: "Picks a number at random between zero and a specified integer \u2013
       the value of which determine which subsequent Action is run next."
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionVarCopy
-    category: 18
+    category: 19
     title: Copy
     description: Copies the value of one Variable to another. This can be between
       Global and Local Variables, but only of those with the same type, such as Integer
@@ -807,7 +845,7 @@ MonoBehaviour:
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionVarPopup
-    category: 18
+    category: 19
     title: Pop Up switch
     description: Uses the value of a Pop Up Variable to determine which Action is
       run next. An option for each possible value the Variable can take will be displayed,
@@ -815,7 +853,7 @@ MonoBehaviour:
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionVarSequence
-    category: 18
+    category: 19
     title: Run sequence
     description: Uses the value of an integer Variable to determine which Action
       is run next. The value is incremented by one each time (and reset to zero when
@@ -824,7 +862,7 @@ MonoBehaviour:
     isEnabled: 1
     color: {r: 1, g: 1, b: 1, a: 1}
   - fileName: ActionVarSet
-    category: 18
+    category: 19
     title: Set
     description: Sets the value of both Global and Local Variables, as declared in
       the Variables Manager. Integers can be set to absolute, incremented or assigned

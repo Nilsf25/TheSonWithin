@@ -205,7 +205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 1
   title: TurnLeft
-  slotSize: {x: 7, y: 7.9985924}
+  slotSize: {x: 10, y: 10}
   sizeType: 1
   positionType: 2
   slotSpacing: 0
@@ -231,10 +231,10 @@ MonoBehaviour:
   relativeRect:
     serializedVersion: 2
     x: 0
-    y: 35.9856
-    width: 53.62
-    height: 34.55392
-  relativePosition: {x: 0, y: 34}
+    y: 399.19998
+    width: 192
+    height: 99.799995
+  relativePosition: {x: 0, y: 40}
   numSlots: 1
   uiButton: {fileID: 0}
   uiPointerState: 0
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 0
   title: MoveForward
-  slotSize: {x: 7, y: 7.9985924}
+  slotSize: {x: 10, y: 10}
   sizeType: 1
   positionType: 2
   slotSpacing: 0
@@ -300,11 +300,11 @@ MonoBehaviour:
   maxAutoWidthFactor: 0.5
   relativeRect:
     serializedVersion: 2
-    x: 48.638702
+    x: 864.00006
     y: 0
-    width: 53.62
-    height: 34.55392
-  relativePosition: {x: 32.9, y: 0}
+    width: 192
+    height: 99.799995
+  relativePosition: {x: 45, y: 0}
   numSlots: 1
   uiButton: {fileID: 0}
   uiPointerState: 0
@@ -345,7 +345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 3
   title: MoveBackward
-  slotSize: {x: 7, y: 7.9985924}
+  slotSize: {x: 10, y: 10}
   sizeType: 1
   positionType: 2
   slotSpacing: 0
@@ -370,11 +370,11 @@ MonoBehaviour:
   maxAutoWidthFactor: 0.5
   relativeRect:
     serializedVersion: 2
-    x: 48.638702
-    y: 71.75953
-    width: 53.62
-    height: 34.55392
-  relativePosition: {x: 32.9, y: 67.8}
+    x: 864.00006
+    y: 898.19995
+    width: 192
+    height: 99.799995
+  relativePosition: {x: 45, y: 90}
   numSlots: 1
   uiButton: {fileID: 0}
   uiPointerState: 0
@@ -423,11 +423,11 @@ MonoBehaviour:
   _isLocked: 0
   id: 1
   title: Navigation
-  manualSize: {x: 19.3, y: 24.5}
+  manualSize: {x: 100, y: 100}
   positionType: 1
-  manualPosition: {x: 692.081, y: 379.08002}
+  manualPosition: {x: 960, y: 499}
   positionSmoothing: 0
-  alignment: 8
+  alignment: 4
   toggleKey: 
   ignoreMouseClicks: 0
   pauseWhenEnabled: 0
@@ -439,7 +439,7 @@ MonoBehaviour:
   updateWhenFadeOut: 1
   hideDuringSaveScreenshots: 1
   fitWithinScreen: 1
-  backgroundTexture: {fileID: 2800000, guid: 2de7d16b4ac4b402182d4f2ca40e0b2d, type: 3}
+  backgroundTexture: {fileID: 0}
   visibleElements:
   - {fileID: 11416388}
   - {fileID: 11424636}
@@ -461,7 +461,7 @@ MonoBehaviour:
   - {fileID: 11424636}
   - {fileID: 11499356}
   - {fileID: 11432120}
-  spacing: 0.5
+  spacing: 1.04
   sizeType: 1
   autoSizeEveryFrame: 0
   orientation: 0
@@ -503,10 +503,10 @@ MonoBehaviour:
   biggestElementSize: {x: 0, y: 0}
   rect:
     serializedVersion: 2
-    x: 618.162
-    y: 326.16
-    width: 147.838
-    height: 105.840004
+    x: 0
+    y: 0
+    width: 1920
+    height: 998
   showInFilter: 1
 --- !u!114 &11499356
 MonoBehaviour:
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 2
   title: TurnRight
-  slotSize: {x: 7, y: 7.9985924}
+  slotSize: {x: 10, y: 10}
   sizeType: 1
   positionType: 2
   slotSpacing: 0
@@ -547,11 +547,11 @@ MonoBehaviour:
   maxAutoWidthFactor: 0.5
   relativeRect:
     serializedVersion: 2
-    x: 96.094696
-    y: 35.9856
-    width: 53.62
-    height: 34.55392
-  relativePosition: {x: 65, y: 34}
+    x: 1728.0001
+    y: 399.19998
+    width: 192
+    height: 99.799995
+  relativePosition: {x: 90, y: 40}
   numSlots: 1
   uiButton: {fileID: 0}
   uiPointerState: 0
